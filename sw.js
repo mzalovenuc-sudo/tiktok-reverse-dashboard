@@ -1,4 +1,4 @@
-const CACHE_NAME = "operations-desk-rm-v1";
+const CACHE_NAME = "operations-desk-rm-v2";
 const FILES = ["./index.html", "./dashboard.js", "./tiktok_reverse_dashboard.html", "./manifest.webmanifest", "./xlsx.full.min.js"];
 self.addEventListener("install", event => event.waitUntil(caches.open(CACHE_NAME).then(cache => cache.addAll(FILES)).then(() => self.skipWaiting())));
 self.addEventListener("activate", event => event.waitUntil(caches.keys().then(keys => Promise.all(keys.filter(key => (key.startsWith("daily-rmm-dashboard-") || key.startsWith("operations-desk-")) && key !== CACHE_NAME).map(key => caches.delete(key)))).then(() => self.clients.claim())));
