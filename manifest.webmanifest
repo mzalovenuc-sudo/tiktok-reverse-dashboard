@@ -1,17 +1,13 @@
 {
-  "name": "รายงานประจำวัน RMM",
-  "short_name": "RMM Report",
-  "description": "สรุป TIKTOK_REVERSE, SLA และ QR SPT ในวัน",
+  "name": "Operations Desk · SLA + TIKTOK_REVERSE",
+  "short_name": "Operations Desk",
+  "description": "แดชบอร์ดรายงาน SLA และ TikTok Reverse พร้อมตัวกรอง RM",
   "lang": "th",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",
-  "display_override": ["standalone", "minimal-ui"],
   "orientation": "any",
-  "background_color": "#fff7f7",
-  "theme_color": "#a61f35",
-  "icons": [
-    {"src":"./icon-192.png","sizes":"192x192","type":"image/png","purpose":"any maskable"},
-    {"src":"./icon-512.png","sizes":"512x512","type":"image/png","purpose":"any maskable"}
-  ]
+  "background_color": "#f5f8f6",
+  "theme_color": "#176a50"
 }
+
